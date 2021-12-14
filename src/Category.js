@@ -7,16 +7,11 @@ import Sectionrev from './layouts/Sectionrev';
 import Sectionmid from './layouts/Sectionmid';
 import Footer from './layouts/Footer';
 
-function App() {
+function Category() {
   return (
     <div>
       <Header></Header>
-      <Navbar></Navbar>
-      <Herosection></Herosection>
-      <Section></Section>
-      <Sectionrev></Sectionrev>
-      <Section></Section>
-      <Sectionmid></Sectionmid>
+      <HeroCaterogry></HeroCaterogry>
       <Footer></Footer>
     </div>
   );
