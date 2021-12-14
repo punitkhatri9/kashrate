@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './layouts/Navbar.js';
 import Header from './layouts/Header.js';
+import Herosection from './layouts/Herosection';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Header></Header>
       <Navbar></Navbar>
+      <Herosection></Herosection>
     </div>
   );
 }
