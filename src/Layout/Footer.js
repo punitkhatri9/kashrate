@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
- function Footer() {
+const Footer = () => {
     return (
         <footer className="bg-blue-900">
         <div className="container px-6 py-4 mx-auto">

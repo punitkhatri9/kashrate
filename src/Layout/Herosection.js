@@ -2,12 +2,7 @@
 import React from 'react'
 
 function Herosection() {
-    return (  
-        
-    
-    
-      
-      
+    return (    
       <div
         className="w-full bg-center bg-cover h-96"
         style={{
@@ -25,10 +20,7 @@ function Herosection() {
             </button>
           </div>
         </div>
-      </div>
- 
-    
-            
+      </div>          
     )
 }
 

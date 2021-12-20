@@ -1,23 +1,17 @@
 import './App.css';
-import Navbar from './layouts/Navbar.js';
-import Header from './layouts/Header.js';
-import Herosection from './layouts/Herosection';
-import Section from './layouts/Section';
-import Sectionrev from './layouts/Sectionrev';
-import Sectionmid from './layouts/Sectionmid';
-import Footer from './layouts/Footer';
+import { Router } from "@reach/router";
+import Homepage from './pages/Homepage';
+import Insurance from './pages/Insurance';
+import Cards from './pages/Cards';
 
 function App() {
   return (
     <div>
-      <Header></Header>
-      <Navbar></Navbar>
-      <Herosection></Herosection>
-      <Section></Section>
-      <Sectionrev></Sectionrev>
-      <Section></Section>
-      <Sectionmid></Sectionmid>
-      <Footer></Footer>
+      <Router>
+      <Homepage path="/" ></Homepage>
+      <Insurance path="/insurance"></Insurance>
+      <Cards path="/cards"></Cards>
+      </Router>
     </div>
   );
 }
