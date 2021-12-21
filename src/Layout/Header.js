@@ -1,6 +1,7 @@
 import { Link, Router } from "@reach/router";
 import React from 'react'
 import { render } from "react-dom";
+import Navbar from "./Navbar";
 
 const Header = () => {
     return (

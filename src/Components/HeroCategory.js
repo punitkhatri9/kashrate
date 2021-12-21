@@ -9,15 +9,15 @@ function HeroCategory() {
       <div className="w-full lg:w-1/2">
         <div className="lg:max-w-lg">
           <h1 className="text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl">
-            Best Place To Choose Your Clothes
+            Home Loan , Category Single Page
           </h1>
-          <p className="mt-2 text-gray-600 dark:text-gray-400">
+          <p className="mt-2 text-gray-600 dark:text-gray-400 ">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
             beatae error laborum ab amet sunt recusandae? Reiciendis natus
             perspiciatis optio.
           </p>
           <button className="w-full px-3 py-2 mt-6 text-xs font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-            Shop Now
+            Apply Now
           </button>
         </div>
       </div>
@@ -48,9 +48,9 @@ function HeroCategory() {
           Default Taiwindcss Config
         </h1>
         </span>
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
-          fusce tortor, ac sed malesuada blandit. Et mi gravida.
+        <p className="mt-2 mr-4 text-justify text-gray-500 dark:text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+          fusce tortor.
         </p>
       </div>
       <div>
@@ -68,12 +68,12 @@ function HeroCategory() {
             fill="#4299E1"
           />
         </svg>
-        <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+        <h1 className="mt-4 font-semibold text-gray-800 text-l dark:text-white">
           Fully Responsive Components
         </h1>
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
-          fusce tortor, ac sed malesuada blandit. Et mi gravida.
+        <p className="mt-2 mr-4 text-justify text-gray-500 dark:text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
+          fusce tortor.
         </p>
       </div>
       <div>
@@ -106,12 +106,12 @@ function HeroCategory() {
             </clipPath>
           </defs>
         </svg>
-        <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+        <h1 className="mt-4 font-semibold text-gray-800 text-l dark:text-white">
           RTL Languages Support
         </h1>
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
+        <p className="mt-2 mr-4 text-justify text-gray-500 dark:text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
-          fusce tortor, ac sed malesuada blandit. Et mi gravida.
+          fusce tortor.
         </p>
       </div>
     </div>

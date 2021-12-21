@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
 	return (
 
-		<footer className='bg-indigo-900 pt-20 pb-20 pattern'>
+		<footer className='pt-20 pb-20 bg-indigo-900 pattern'>
 			<div className='container px-6 py-4 mx-auto'>
 				<div className='lg:flex'>
 					<div className='mt-6 lg:mt-0 lg:flex-1'>
@@ -93,37 +93,37 @@ const Footer = () => {
 								<a
 									href=''
 									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 1111
+									Lorem ipsum
 								</a>
 								<a
 									href=''
 									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 2111
+									Lipsum 2111
 								</a>
 								<a
 									href=''
 									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 3111
+									Lorem ipsum dolor
 								</a>
 								<a
 									href=''
 									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 4111
+									Fusce tortor
 								</a>
 								<a
 									href=''
 									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 5111
+									Lipsum 5111
 								</a>
 								<a
 									href=''
 									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 6111
+									Dolor sit amet
 								</a>
 								<a
 									href=''
 									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 7111
+									lipsum sit amet
 								</a>
 								<a
 									href=''
@@ -188,7 +188,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<hr className='h-px my-6 text-blue-50 hover:text-white' />
-				<div className='text-justify text-blue-50 hover:text-white text-sm'>
+				<div className='text-sm text-justify text-blue-50 hover:text-white'>
 					<p className='my-2'>
 						It is a long established fact that a reader will be distracted by
 						the readable content of a page when looking at its layout.

@@ -1,12 +1,10 @@
 import React from 'react';
-import Navbar from '../Layout/Navbar';
-import Header from '../Layout/Header';
-import Herosection from '../Layout/Herosection';
-import Section from '../Layout/Section';
-import Sectionrev from '../Layout/Sectionrev';
-import Sectionmid from '../Layout/Sectionmid';
-//import Footer from  '../Layout/Footer';
-import Layout from '../Layout';
+
+import Herosection from '../../Components/Herosection';
+import Section from '../../Components/Section';
+import Sectionrev from '../../Components/Sectionrev';
+import Sectionmid from '../../Components/Sectionmid';
+import Layout  from '../../Layout'
 
 const Homepage = () => {
     return (

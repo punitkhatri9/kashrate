@@ -14,11 +14,10 @@ function Section() {
       <div className="w-full px-16 lg:py-8 lg:w-1/2">
         <div className="lg:max-w-lg">
           <h1 className="text-2xl font-medium tracking-wide text-gray-800 dark:text-white lg:text-4xl">
-            Find your premium new glasses exported from US
+          Compare Home Loans...!
           </h1>
           <p className="mt-2 text-gray-600 dark:text-gray-300">
-            We work with the best remunated glasses dealers in US to find your new
-            glasses.
+          You can get a personal loan from a bank, a credit union, a private business or a lender. A personal loan is an amount of money you can borrow to pay for large expenses up front.
           </p>
           <div className="grid gap-6 mt-8 sm:grid-cols-2">
             <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
