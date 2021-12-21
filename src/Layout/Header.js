@@ -6,9 +6,9 @@ import Navbar from "./Navbar";
 const Header = () => {
     return (
         <div>
-            <nav className="flex flex-wrap items-center justify-between py-4 bg-white  mx-auto container">
+            <nav className="container flex flex-wrap items-center justify-between py-4 mx-auto bg-white">
 
-                <div className="w-auto lg:order-1 lg:w-1/6  px-10">
+                <div className="w-auto px-10 lg:order-1 lg:w-1/6">
                     <span className="text-xl font-semibold text-gray-900 font-heading" >
                         <Link to="/"> Kashmonk </Link>{" "}
                     </span>
@@ -53,14 +53,21 @@ const Header = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                         </svg>0123456789
                     </a>
+                    
                 </div>
+               
             </nav>
 
-
+            <div class="py-3 px-24 flex flex-col md:flex-row text-left md:items-left  bg-gray-900">
+                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-white hover:text-blue-600  dark:hover:text-blue-400 hover:border-b-4 md:my-0" href="#">News</a>
+                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Articles</a>
+                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Videos</a>
+                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Tricks</a>
+            </div>
 
 
         </div>
-
+        
 
     )
 }
