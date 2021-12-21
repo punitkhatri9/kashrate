@@ -9,7 +9,7 @@ const Header = () => {
             <nav className="container flex flex-wrap items-center justify-between py-4 mx-auto bg-white">
 
                 <div className="w-auto px-10 lg:order-1 lg:w-1/6">
-                    <span className="text-xl font-semibold text-gray-900 font-heading" >
+                    <span className="text-xl font-bold text-gray-900" >
                         <Link to="/"> Kashmonk </Link>{" "}
                     </span>
                 </div>
@@ -58,11 +58,11 @@ const Header = () => {
 
             </nav>
 
-            <div class="py-3 px-24 flex flex-col md:flex-row text-left md:items-left  bg-blue-900">
-                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-white hover:text-blue-600  dark:hover:text-blue-400 hover:border-b-4 md:my-0" href="#">News</a>
-                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Articles</a>
-                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Videos</a>
-                <a class="mx-4 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Tricks</a>
+                <div class="py-3 px-24 flex flex-col md:flex-row text-left md:items-left  bg-blue-900">
+                <a class="mx-8 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-white hover:text-blue-600  dark:hover:text-blue-400 hover:border-b-4 md:my-0" href="#">Home Loans</a>
+                <a class="mx-8 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Care Loans</a>
+                <a class="mx-8 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Travel Loans</a>
+                <a class="mx-8 text-sm leading-7 text-white transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0" href="#">Personal Loans</a>
             </div>
 
 
