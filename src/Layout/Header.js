@@ -1,6 +1,7 @@
 import { Link, Router } from "@reach/router";
 import React from 'react'
 import { render } from "react-dom";
+
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -26,7 +27,7 @@ const Header = () => {
                 </div>
                 <div className="items-center hidden w-auto text-bold lg:w-3/6 navbar-menu lg:order-2 lg:block ">
                     <a className="block mt-4 text-gray-900 mr-7 lg:inline-block lg:mt-0 hover:text-blue-800" href="#">
-                        <Link to="insurance"> Insurance </Link>
+                        <Link to="/insurance"> Insurance </Link>
                     </a>
                     <a className="block mt-4 text-gray-900 mr-7 lg:inline-block lg:mt-0 hover:text-blue-800" href="#">
                         <Link to="cards">Cards</Link>
