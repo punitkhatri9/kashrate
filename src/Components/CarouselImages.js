@@ -6,38 +6,39 @@ function CarouselImages() {
   let dataCrs = [
     {
       src: "https://images.unsplash.com/photo-1616432043562-3671ea2e5242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      title: "Health Insurance",
-      subtitle: "xyz"
+      title: "Vehical Insurance",
+      subtitle: "ipsum lorem"
     },
     {
       src: "https://images.unsplash.com/photo-1583088580067-16d1109aeacb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=334&q=60",
-      title: "abc",
-      subtitle: "xyz"
+      title: "Health Insurance",
+      subtitle: "ipsum lorem"
     },
     {
-      title: "abc",
-      subtitle: "xyz",
+      title: "Home Insurance",
+      subtitle: "lorem ipsum",
       src: "https://images.unsplash.com/photo-1525881652041-60a28ba9778e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
       src: "https://images.unsplash.com/photo-1504150558240-0b4fd8946624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-      title: "abc",
-      subtitle: "xyz"
+      title: "Travel Insurance",
+      subtitle: "lorem ipsum"
     },
     {
       src: "https://images.unsplash.com/photo-1605003823507-22247a88bf4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", title: "abc",
-      subtitle: "xyz"
+      title: "Lifecare Insurance",
+      subtitle: "lorem ipsum"
     },
     {
-      src: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
-      title: "abc",
-      subtitle: "xyz"
+      src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      title: "Property Insurance",
+      subtitle: "lorem Ipsum"
     }
   ];
   return (
 
-    <section className="container p-6 mx-auto bg-white dark:bg-gray-800 mb-24">
-      <h2 className="text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-4xl text-center">
+    <section className="container p-6 mx-auto mb-24 bg-white dark:bg-gray-800">
+      <h2 className="text-3xl font-bold tracking-wide text-center text-gray-800 dark:text-white lg:text-4xl">
         Top Money Saving Deals
       </h2>
       <div className='text-center text-gray-800 capitalize font-small dark:text-white md:text-1xl'>

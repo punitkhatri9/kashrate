@@ -5,6 +5,7 @@ import Herosection from '../../Components/Herosection';
 import HeroWithImgage from '../../Components/HeroWithImage';
 import Layout from '../../Layout';
 
+
 const Homepage = () => {
 
     let heros = [
@@ -30,7 +31,7 @@ const Homepage = () => {
     return (
         <div>
             <Layout>
-                <Herosection></Herosection>
+            <Herosection></Herosection>
 
                 {
                     heros.map((data) => {
