@@ -1,10 +1,10 @@
 import React from 'react';
 
-function HeroWithImage({ reverse, title, subtitle, imgsrc }) {
+function HeroWithImage({ reverse, title, subtitle, imgsrc, bgcol }) {
 	return (
-		<section className='bg-white dark:bg-gray-800'>
+		<section className={`${bgcol ? bgcol : 'bg-white dark:bg-gray-800'}`}>
 			<div
-				className={`container flex flex-col mx-auto    py-10  space-y-6 lg:py-16 lg:h-[32rem]   lg:items-center   ${reverse ? 'lg:flex-row-reverse space-y-5' : 'lg:flex-row'
+				className={`container flex flex-col mx-auto py-16  lg:py-16 lg:h-[32rem]   lg:items-center   ${reverse ? 'lg:flex-row-reverse ' : 'lg:flex-row'
 					}`}>
 				<div className='w-full lg:w-1/2'>
 					<div className={`lg:max-w-lg ${reverse ? 'pl-4' : 'pl-8'}`}>

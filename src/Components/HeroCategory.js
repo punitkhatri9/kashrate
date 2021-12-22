@@ -27,8 +27,8 @@ function HeroCategory() {
           <InsuVect />
         </div>
       </div>
-      <section className="inline-flex items-start justify-between p-6 space-x-32 bg-blue-50 rounded-xl">
-        <div className="container px-6 py-6 mx-auto">
+      <section className="inline-flex items-start justify-between p-6 space-x-32 bg-blue-50 rounded-xl mb-24">
+        <div className="container px-6 py-6 mx-auto ">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <div>
               <svg className="w-8 h-8" viewBox="0 0 30 30" fill="none">

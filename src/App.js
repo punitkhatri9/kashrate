@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Homepage path="/" ></Homepage>
         <Insurance path="insurance"></Insurance>
-        <Cards path="/cards"></Cards>
+        <Cards path="cards"></Cards>
       </Router>
     </div>
   );
