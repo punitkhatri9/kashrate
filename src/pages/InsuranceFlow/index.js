@@ -1,11 +1,12 @@
-import HeroCategory from '../../Components/HeroCategory';
+
 import HeroWithImgage from '../../Components/HeroWithImage';
 import Layout from '../../Layout';
+import InsuranceFlow1 from '../InsuranceFlow/insuranceflow1'
 
-function Insurance() {
+function InsuranceFlow() {
 	let heros = [
 		{
-			title: 'Home loan deals with low interest that suits your needs',
+			title: 'New Home loan deals with low interest that suits your needs',
 			subtitle:
 				'Avail Pre-Approved Home Loan Sanction letter Exclusively for ICICI Bank Customers. Get Home Loan with Special Processing Offer and Zero Documentation.',
 			src: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1311&q=80',
@@ -31,7 +32,7 @@ function Insurance() {
 	return (
 		<div>
 			<Layout>
-				<HeroCategory></HeroCategory>
+				<InsuranceFlow1></InsuranceFlow1>
 
 				{heros.map((data) => {
 					return (
@@ -48,4 +49,4 @@ function Insurance() {
 	);
 }
 
-export default Insurance;
+export default InsuranceFlow;

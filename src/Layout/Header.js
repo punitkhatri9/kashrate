@@ -96,7 +96,8 @@ function SubMenu(prop) {
 	return (
 		<span className='mr-8 text-sm leading-7  transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0'>
 			<a className='text-white  hover:text-blue-200 ' href='#'>
-				{prop.name}
+				{/* {prop.name} */}
+				<Link to="/insuranceflow">{prop.name}</Link>
 			</a>
 		</span>
 	);
