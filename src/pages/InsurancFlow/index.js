@@ -1,17 +1,14 @@
-
 import HeroCategory from '../../Components/HeroCategory';
 import HeroWithImgage from '../../Components/HeroWithImage';
 import Layout from '../../Layout';
-import vector1 from '../../Components/Svgs/vector1';
 
-
-function Cards() {
+function Insurance() {
 	let heros = [
 		{
 			title: 'Home loan deals with low interest that suits your needs',
 			subtitle:
 				'Avail Pre-Approved Home Loan Sanction letter Exclusively for ICICI Bank Customers. Get Home Loan with Special Processing Offer and Zero Documentation.',
-			src: 'https://images.unsplash.com/photo-1511837008003-71eca36ceb70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+			src: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1311&q=80',
 			reverse: true,
 			bgcol: 'bg-red-50',
 		},
@@ -51,4 +48,4 @@ function Cards() {
 	);
 }
 
-export default Cards;
+export default Insurance;

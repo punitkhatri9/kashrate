@@ -1,8 +1,13 @@
 import React from 'react';
+import { Link } from '@reach/router';
 
 const Footer = () => {
+	
+let FeatureList = ['Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans'];
+let ImpList = ['Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans','Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans'];
+let KnowledgeList = ['Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans','Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans'];
+let Cs= ['+1 526 654 8965', 'example@mail.com']
 	return (
-
 		<footer className='pt-20 pb-20 bg-indigo-900 pattern'>
 			<div className='container px-6 py-4 mx-auto'>
 				<div className='lg:flex'>
@@ -12,124 +17,28 @@ const Footer = () => {
 								<h3 className='mb-3 text-xl text-blue-50 hover:text-white'>
 									Features
 								</h3>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum Features
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									Lorem ipsum
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									dolor, sit amet
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									consectetur adipisicing
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum Features
-								</a>
-
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum Links
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 8111
-								</a>
+								
+								{FeatureList.map((name) => {
+									return <FeatureMenu name={name}></FeatureMenu>;
+								})}
+								 
 							</div>
 							<div>
 								<h3 className='mb-3 text-xl text-blue-50 hover:text-white'>
 									Important Links
 								</h3>
-
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									elit. Saepe
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									illo provident
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									dolorem, aliquam
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									libero doloremque
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									quam nesciunt quis iste facilis consequuntur cumque sunt
-									possimus ducimus nobis quibusdam ut enim esse.
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 8111
-								</a>
+								{ImpList.map((name) => {
+									return <FeatureMenu name={name}></FeatureMenu>;
+								})}	
+								
 							</div>
 							<div>
 								<h3 className='mb-3 text-xl text-blue-50 hover:text-white'>
 									Knowledge Hub
 								</h3>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									Lorem ipsum
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									Lipsum 2111
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									Lorem ipsum dolor
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									Fusce tortor
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									Lipsum 5111
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									Dolor sit amet
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum sit amet
-								</a>
-								<a
-									href=''
-									className='block my-2 text-sm text-blue-50 hover:text-white'>
-									lipsum 8111
-								</a>
+								{KnowledgeList.map((name) => {
+									return <FeatureMenu name={name}></FeatureMenu>;
+								})}	
 							</div>
 							<div>
 								<h3 className='mb-3 text-xl text-blue-50 hover:text-white'>
@@ -137,11 +46,11 @@ const Footer = () => {
 								</h3>
 
 								<span className='block mt-2 text-sm text-blue-50 hover:text-white'>
-									+1 526 654 8965
+								{Cs.map((name) => {
+									return <FeatureMenu name={name}></FeatureMenu>;
+								})}
 								</span>
-								<span className='block mt-2 text-sm text-blue-50 hover:text-white'>
-									example@email.com
-								</span>
+								
 							</div>
 						</div>
 					</div>
@@ -218,3 +127,11 @@ const Footer = () => {
 	);
 };
 export default Footer;
+
+function FeatureMenu(prop) {
+	return (
+		<a href='' className='block my-2 text-sm text-blue-50 hover:text-white'>
+			{prop.name}
+		</a>
+	);
+}
