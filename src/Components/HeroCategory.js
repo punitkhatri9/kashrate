@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from '@reach/router';
 import InsuVect from '../Components/Svgs/InsuVect';
 
 function HeroCategory() {
@@ -18,16 +18,17 @@ function HeroCategory() {
               beatae error laborum ab amet sunt recusandae? Reiciendis natus
               perspiciatis optio.
             </p>
+            <Link to="/forms">
             <button className="w-full px-3 py-2 mt-6 text-xs font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
               Apply Now
-            </button>
+            </button></Link>
           </div>
         </div>
         <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
           <InsuVect />
         </div>
       </div>
-      <section className="inline-flex items-start justify-between p-6 space-x-32 bg-blue-50 rounded-xl mb-24">
+      <section className="inline-flex items-start justify-between p-6 mb-24 space-x-32 bg-blue-50 rounded-xl">
         <div className="container px-6 py-6 mx-auto ">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <div>

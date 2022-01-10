@@ -3,6 +3,7 @@ import { Router } from "@reach/router";
 import Cards from './pages/Cards';
 import Homepage from './pages/Homepage';
 import Insurance from './pages/Insurance';
+import Form from './pages/Form';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
         <Homepage path="/" ></Homepage>
         <Insurance path="insurance"></Insurance>
         <Cards path="cards"></Cards>
+        <Form path="forms"></Form>
       </Router>
     </div>
   );
