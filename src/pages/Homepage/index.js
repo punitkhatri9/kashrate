@@ -32,29 +32,8 @@ const Homepage = () => {
 	return (
 		<div>
 			<Layout>
-				<div className='container my-16 mx-auto product-header mb-8 grid gap-8 xmd:mb-16 xmd:grid-cols-2-3'>
-					<div className='flex flex-col justify-start md:justify-center'>
-						<div>
-							<h2 className='heading links:dashed'>
-								Ready to bring your <b>big ideas to life?</b>
-							</h2>
-							<p className='links:dashed'>
-								Whatever you want to achieve, you can make it happen sooner with
-								a low rate loan from Plenti. Get started today and together
-								let's turn your somedays into todays.
-							</p>
-							<div className='max-w-560px md:w-min'>
-								<div className='grid gap-4 grid-flow-col grid-cols-auto-260'>
-									<a href='/#personal' className='btn btn-primary'>
-										Get your rate
-									</a>
-									<a className='btn btn-secondary-outline' href='/contact/'>
-										Contact us
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div className='container  mx-auto product-header  grid gap-8 xmd:mb-16 xmd:grid-cols-2-3'>
+
 					<div className='flex flex-col justify-start md:justify-center'>
 						<figure className='img flex flex-col'>
 							<div className='w-full' style={{ maxWidth: 3632 }}>
