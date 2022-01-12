@@ -1,9 +1,10 @@
 import { Router } from "@reach/router";
 
 import Cards from './pages/Cards';
+import Form from './pages/Form';
+import Homeloan from "./pages/Homeloan";
 import Homepage from './pages/Homepage';
 import Insurance from './pages/Insurance';
-import Form from './pages/Form';
 import InsuranceFlow from './pages/InsuranceFlow';
 
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
         <Cards path="cards"></Cards>
         <Form path="forms"></Form>
         <InsuranceFlow path="insuranceflow"></InsuranceFlow>
+        <Homeloan path="homeloan"></Homeloan>
       </Router>
     </div>
   );

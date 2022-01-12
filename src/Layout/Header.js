@@ -2,7 +2,12 @@ import { Link } from '@reach/router';
 import React from 'react';
 
 const Header = () => {
-	let submenu = ['Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans'];
+	let submenu = [
+		{ name: 'Home Loans', endpoint: "/homeloan" },
+		{ name: 'Card Loans', endpoint: "/homeloan" },
+		{ name: 'Travel Loans', endpoint: "/homeloan" },
+		{ name: 'Personal Loans', endpoint: "/homeloan" }
+	];
 	let topmenu = [
 		{ name: "Insurance", endpoint: "/insurance" },
 		{ name: "Cards", endpoint: "/cards" },
@@ -82,8 +87,8 @@ const Header = () => {
 			</nav>
 			<nav className=' bg-blue-900'>
 				<div className='container flex flex-wrap lg:justify-start py-4 mx-auto'>
-					{submenu.map((name) => {
-						return <SubMenu name={name}></SubMenu>;
+					{submenu.map((row) => {
+						return <SubMenu name={row.name} link={row.endpoint}></SubMenu>;
 					})}
 				</div>
 			</nav>
@@ -97,7 +102,7 @@ function SubMenu(prop) {
 		<span className='mr-8 text-sm leading-7  transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0'>
 			<a className='text-white  hover:text-blue-200 ' href='#'>
 				{/* {prop.name} */}
-				<Link to="/insuranceflow">{prop.name}</Link>
+				<Link to={prop.link}>{prop.name}</Link>
 			</a>
 		</span>
 	);
