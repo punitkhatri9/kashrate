@@ -8,7 +8,7 @@ let ImpList = ['Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans','Hom
 let KnowledgeList = ['Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans','Home Loans', 'Card Loans', 'Travel Loans', 'Personal Loans'];
 let Cs= ['+1 526 654 8965', 'example@mail.com']
 	return (
-		<footer className='pt-20 pb-20 bg-indigo-900 pattern'>
+		<footer className='pt-20 pb-20 bg-gray-900 pattern'>
 			<div className='container px-6 py-4 mx-auto'>
 				<div className='lg:flex'>
 					<div className='mt-6 lg:mt-0 lg:flex-1'>

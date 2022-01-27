@@ -1,5 +1,8 @@
 import { Link } from '@reach/router';
 import React from 'react';
+import Login from '../pages/Login';
+
+
 
 const Header = () => {
 	let submenu = [
@@ -62,7 +65,7 @@ const Header = () => {
 								d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
 							/>
 						</svg>
-						My Account
+						<Link to="/dashboard">	My Account</Link>
 					</a>
 					|
 					<a
@@ -81,12 +84,15 @@ const Header = () => {
 								d='M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z'
 							/>
 						</svg>
+						</a>
+						<a
+						className='block mt-4 ml-5 mr-4 text-gray-900 lg:inline-block lg:mt-0 hover:text-blue-800' href="./login">
 						0123456789
 					</a>
 				</div>
 			</nav>
-			<nav className=' bg-blue-900'>
-				<div className='container flex flex-wrap lg:justify-start py-4 mx-auto'>
+			<nav className='bg-blue-900 '>
+				<div className='container flex flex-wrap py-2 mx-auto lg:justify-start'>
 					{submenu.map((row) => {
 						return <SubMenu name={row.name} link={row.endpoint}></SubMenu>;
 					})}
@@ -99,12 +105,21 @@ export default Header;
 
 function SubMenu(prop) {
 	return (
-		<span className='mr-8 text-sm leading-7  transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600  dark:hover:text-blue-400 hover:underline md:my-0'>
-			<a className='text-white  hover:text-blue-200 ' href='#'>
-				{/* {prop.name} */}
-				<Link to={prop.link}>{prop.name}</Link>
-			</a>
-		</span>
+		// <span className='mr-8 text-sm leading-7 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0'>
+		// 	<a className='text-white hover:text-blue-200 ' href='#'>
+		// 		{/* {prop.name} */}
+		// 		<Link to={prop.link}>{prop.name}</Link>
+		// 	</a>
+		// </span>
+
+<div class="">
+<a
+  class="rounded-t border-b-4 border-white-700 justify-around hover:bg-gray-400 pb-2 mt-2 px-4 flex"
+  href="#"
+  >
+	  <Link to={prop.link}>{prop.name}</Link>
+	  </a>
+</div>
 	);
 }
 
@@ -115,5 +130,7 @@ function TopCenterMenu(prop) {
 		>
 			<Link to={prop.endpoint}>{prop.name}</Link>
 		</span>
+
+		
 	);
 }

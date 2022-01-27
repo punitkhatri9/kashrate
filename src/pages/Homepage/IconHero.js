@@ -32,10 +32,10 @@ function IconHero() {
 
         <article className="w-full bg-center bg-cover h-[32rem]" style={mystyle}>
 
-            <section className="container  mx-auto py-24 md:w-7/12 w-11/12 mb-8">
+            <section className="container  mx-auto py-24 md:w-9/12 w-11/12 mb-8">
 
 
-                <ul ul className='mx-auto bg-blue-50   shadow-lg  grid lg:grid-cols-7 md:grid-cols-4 sm:grid-cols-4 grid-cols-2 border-collapse	ring-2 ring-blue-200'>
+                <ul ul className='mx-auto bg-blue-50   shadow-lg  grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 grid-cols-2 border-collapse	ring-2 ring-blue-200'>
                     {
                         menuIcon.map(row => {
                             return (

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from '@reach/router';
 import InsuVect from '../../Components/Svgs/InsuVect'
 
-function InsuranceFlow1() {
+function InsuranceFlow3() {
   return (
 
     <div class="flex flex-wrap bg-gray-200">
@@ -124,34 +124,42 @@ function InsuranceFlow1() {
                     </div>
                   </div>
                 </div>
-
-                <div className="container grid grid-cols-2 gap-8 pt-6 mx-auto mt-12">
-                  {/* Remove class [ h-24 ] when adding a card block */}
-                  {/* Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border */}
-                  <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
-                  {/* Remove class [ h-24 ] when adding a card block */}
-                  {/* Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border */}
-                  <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
-
+                <div className="container pt-6 mx-auto mt-12">
                   <input
                     id="loanterm"
                     type="text"
-                    placeholder='Enter full name'
-                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
-                  />
-                  <input
-                    id="loanterm"
-                    type="text"
-                    placeholder='Enter 10 digit mobile number'
+                    placeholder='Enter city of pincode'
                     className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
                   />
                 </div>
+                
+
+
+                  <div className="w-full pt-6 mx-auto mt-12">
+                    <h1>Populer Cities</h1>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+                    <button className="rounded p-1 text-tiny pl-4 pr-4 m-1 bg-transparent border-2 border-gray-400  hover:bg-black hover:text-white focus:outline-none ">Primary</button>
+
+                  </div>
+
+
+                 
                 <div className="flex justify-center mt-16">
-                  
+
                   <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-900 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                     Get Your Reuslts
                   </button>
-                  
+
                 </div>
                 <p className="mt-2 text-center text-xvs">By Clicking continue  on “Continue”, you agree to our Privacy Plicy, Terms of use & *Disclaimer</p>
               </div>
@@ -171,4 +179,4 @@ function InsuranceFlow1() {
 
   )
 }
-export default InsuranceFlow1
+export default InsuranceFlow3

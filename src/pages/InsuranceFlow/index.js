@@ -1,7 +1,10 @@
 
 import HeroWithImgage from '../../Components/HeroWithImage';
 import Layout from '../../Layout';
-import InsuranceFlow1 from '../InsuranceFlow/insuranceflow1'
+import InsuranceFlow1 from '../InsuranceFlow/insuranceflow1';
+import InsuranceFlow2 from '../InsuranceFlow/insuranceflow2';
+import InsuranceFlow3 from '../InsuranceFlow/insuranceflow3';
+import InsuranceFlow4 from '../InsuranceFlow/insuranceflow4';
 
 function InsuranceFlow() {
 	let heros = [
@@ -32,7 +35,9 @@ function InsuranceFlow() {
 	return (
 		<div>
 			<Layout>
-				<InsuranceFlow1></InsuranceFlow1>
+				{/* <InsuranceFlow2></InsuranceFlow2> */}
+				{/* <InsuranceFlow3></InsuranceFlow3> */}
+				<InsuranceFlow4></InsuranceFlow4>
 
 				{heros.map((data) => {
 					return (

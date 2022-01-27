@@ -51,7 +51,7 @@ function CarouselImages() {
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <div className="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        <div className="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {
             dataCrs.map(prop => {
               return <ImgCard title={prop.title} subtitle={prop.subtitle} src={prop.src}  ></ImgCard>;

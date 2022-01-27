@@ -4,7 +4,8 @@ import CarouselImages from '../../Components/CarouselImages';
 import Herosection from '../../Components/Herosection';
 import HeroWithImgage from '../../Components/HeroWithImage';
 import Layout from '../../Layout';
-
+import Dbsection1 from '../Dashboard/dbsection1';
+import Dbsection2 from '../Dashboard/dbsection2';
 
 const Dashboard = () => {
 
@@ -31,19 +32,25 @@ const Dashboard = () => {
     return (
         <div>
             <Layout>
-            <Herosection></Herosection>
 
-                {
-                    heros.map((data) => {
-                        return <HeroWithImgage
-                            title={data.title}
-                            subtitle={data.subtitle}
-                            reverse={data.reverse}
-                            imgsrc={data.src}
-                        ></HeroWithImgage>
-                    })
-                }
-                <CarouselImages></CarouselImages>
+                <Herosection></Herosection>
+
+                <div class="container px-6 py-10 mx-auto">
+                    <h1 class="text-xl font-semibold text-gray-800 capitalize dark:text-white">Welcome back, Deven <br /> make the most of your  <span class="text-blue-500">acoutn by fillin in your Profile</span></h1>
+                </div>
+
+                <Dbsection1></Dbsection1>
+                <Dbsection2></Dbsection2>
+
+               <div class="container px-6 py-10 mx-auto">
+                    <h1 className="text-sm font-semibold text-gray-800 capitalize dark:text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </h1>
+                    <p className="pt-8 text-xs font-normal text-justify text-gray-800 capitalize dark:text-white">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis  mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velconsequat sunt nostrudamet.
+                    </p>
+                    <p className="pt-8 text-xs font-normal text-justify text-gray-800 capitalize dark:text-white">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis  mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim  non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+               </div>
+
             </Layout>
         </div>
     );

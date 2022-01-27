@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from '@reach/router';
-import InsuVect from '../../Components/Svgs/InsuVect'
+import InsuVect from '../../Components/Svgs/InsuVect';
+import Dropdown from '../../Components/Dropdown';
 
-function InsuranceFlow1() {
+function InsuranceFlow2() {
   return (
 
     <div class="flex flex-wrap bg-gray-200">
@@ -11,7 +12,7 @@ function InsuranceFlow1() {
           <div className="items-center">
             <div className="w-full">
               <div className="lg:max-w-lg">
-                <h1 className="text-2xl font-semibold text-gray-800 uppercase dark:text-white lg:text-3xl">
+                <h1 className="text-xl font-semibold text-gray-800 uppercase dark:text-white ">
                   Home Loan , Category Single Page
                 </h1>
                 <div className='mt-4 space-y-5'>
@@ -125,35 +126,29 @@ function InsuranceFlow1() {
                   </div>
                 </div>
 
-                <div className="container grid grid-cols-2 gap-8 pt-6 mx-auto mt-12">
-                  {/* Remove class [ h-24 ] when adding a card block */}
-                  {/* Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border */}
+                <div className="container grid justify-center grid-cols-3 gap-8 pt-6 mx-auto mt-12">
                   <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
-                  {/* Remove class [ h-24 ] when adding a card block */}
-                  {/* Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border */}
                   <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
-
-                  <input
-                    id="loanterm"
-                    type="text"
-                    placeholder='Enter full name'
-                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
-                  />
-                  <input
-                    id="loanterm"
-                    type="text"
-                    placeholder='Enter 10 digit mobile number'
-                    className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
+                  <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
+                  <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
+                  <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
+                  <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
+                </div>
+                <div className="container justify-center pt-6 mx-auto w-1/2 mt-4" >
+                <Dropdown
+                    options={["Edit", "Duplicate", "Archive", "Move", "Delete"]}
+                  onOptionSelect={(option) => {
+                    return option;
+                  }
+                  } 
                   />
                 </div>
-                <div className="flex justify-center mt-16">
-                  
-                  <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-900 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+                <div className="flex justify-center mt-16">               
+                 <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-900 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                     Get Your Reuslts
                   </button>
-                  
                 </div>
-                <p className="mt-2 text-center text-xvs">By Clicking continue  on “Continue”, you agree to our Privacy Plicy, Terms of use & *Disclaimer</p>
+
               </div>
             </div>
 
@@ -171,4 +166,4 @@ function InsuranceFlow1() {
 
   )
 }
-export default InsuranceFlow1
+export default InsuranceFlow2
