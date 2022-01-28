@@ -114,7 +114,7 @@ function SubMenu(prop) {
 
 <div class="">
 <a
-  class="rounded-t border-b-4 border-white-700 justify-around hover:bg-gray-400 pb-2 mt-2 px-4 flex"
+  class="rounded-t border-b-4 text-white  justify-around hover:border-white pb-2 mt-2 px-4 flex"
   href="#"
   >
 	  <Link to={prop.link}>{prop.name}</Link>

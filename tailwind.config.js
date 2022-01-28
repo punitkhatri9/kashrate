@@ -23,6 +23,17 @@ module.exports = {
       '7xl': '5rem',
     }
   },
+   colors: {
+    'blue-dark': '#00143B',
+    'blue': '#1A498C',
+    'blue-light': '#CEDCFF',
+    'gray-light': '#E9EFF6',
+    'blue-100': '#F2F8FF',
+    'white': '#FFFFFF',
+  },
+  borderRadius: {
+   '4xl': '2rem',
+  },
   variants: {
     extend: {},
   },
