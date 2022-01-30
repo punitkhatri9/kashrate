@@ -44,10 +44,10 @@ function CarouselImages() {
       <div className='text-center capitalize text-tiny text-dblue dark:text-white md:text-1xl'>
 
         <p className="mt-5">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
         </p>
         <p className="mt-1">
-        Velit officia consequat duis enim velit mollit. su nostrud amet.
+          Velit officia consequat duis enim velit mollit. su nostrud amet.
         </p>
         <p className="mt-1">
           Minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -56,8 +56,8 @@ function CarouselImages() {
       <div className="flex items-center justify-center">
         <div className="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {
-            dataCrs.map(prop => {
-              return <ImgCard title={prop.title} subtitle={prop.subtitle} src={prop.src}  ></ImgCard>;
+            dataCrs.map((prop, index) => {
+              return <ImgCard key={index} title={prop.title} subtitle={prop.subtitle} src={prop.src}  ></ImgCard>;
             })
           }
 
