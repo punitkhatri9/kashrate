@@ -148,7 +148,7 @@ function InsuranceFlow1() {
                 </div>
                 <div className="flex justify-center mt-16">
                   
-                  <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-900 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+                  <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-dblue rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                     Get Your Reuslts
                   </button>
                   

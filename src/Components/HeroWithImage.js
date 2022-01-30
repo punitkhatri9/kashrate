@@ -2,20 +2,20 @@ import React from 'react';
 
 function HeroWithImage({ reverse, title, subtitle, imgsrc, bgcol }) {
 	return (
-		<section className={`${bgcol ? bgcol : 'bg-white dark:bg-gray-800'}`}>
+		<section className={`${bgcol ? bgcol : 'bg-white'}`}>
 			<div
-				className={`container flex flex-col mx-auto py-16  lg:py-16 lg:h-[32rem]   lg:items-center   ${reverse ? 'lg:flex-row-reverse ' : 'lg:flex-row'
+				className={`container flex flex-col mx-auto py-16  lg:py-16 lg:h-[16rem]   lg:items-center   ${reverse ? 'lg:flex-row-reverse ' : 'lg:flex-row'
 					}`}>
 				<div className='w-full lg:w-1/2'>
-					<div className={`lg:max-w-lg ${reverse ? 'pl-4' : 'pl-8'}`}>
-						<h1 className='text-3xl font-bold tracking-wide text-gray-800 dark:text-white lg:text-4xl'>
+					<div className={`lg:max-w-lg ${reverse ? 'pl-8' : 'pl-0'} mx-8`}>
+						<h1 className='text-xl font-normal tracking-wide text-dblue lg:text-2xl'>
 							{title}
 						</h1>
 						<p className='pt-4'>
 							{subtitle}
 						</p>
 						<div className='mt-8 space-y-5'>
-							<p className='flex items-center  text-gray-700 dark:text-gray-200'>
+							<p className='flex items-center text-dblue'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='w-6 h-6 mx-2 text-blue-500'
@@ -31,7 +31,7 @@ function HeroWithImage({ reverse, title, subtitle, imgsrc, bgcol }) {
 								</svg>
 								<span className='mx-2'>Clean and Simple Layout</span>
 							</p>
-							<p className='flex items-center  text-gray-700 dark:text-gray-200'>
+							<p className='flex items-center text-gray-700 dark:text-gray-200'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='w-6 h-6 mx-2 text-blue-500'
@@ -47,7 +47,7 @@ function HeroWithImage({ reverse, title, subtitle, imgsrc, bgcol }) {
 								</svg>
 								<span className='mx-2'>Just Copy Paste Codeing</span>
 							</p>
-							<p className='flex items-center  text-gray-700 dark:text-gray-200'>
+							<p className='flex items-center text-gray-700 dark:text-gray-200'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='w-6 h-6 mx-2 text-blue-500'

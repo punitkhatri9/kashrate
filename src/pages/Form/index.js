@@ -60,7 +60,7 @@ const Form = () => {
                                     Loan Amount
                                 </label>
                                 <div className='flex'  >
-                                    <span className="block px-2 mt-2 text-2xl text-white bg-blue-900 border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                                    <span className="block px-2 mt-2 text-2xl text-white bg-dblue border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
                                         @
                                     </span>
 
@@ -238,7 +238,7 @@ const Form = () => {
                                     type="text"
                                     className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
                                 />
-                                <span className="block p-2 mt-2 text-white bg-blue-900 border border-gray-300 rounded-md text-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                                <span className="block p-2 mt-2 text-white bg-dblue border border-gray-300 rounded-md text-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
                                     Find
                                 </span>
                             </div>
@@ -353,7 +353,7 @@ const Form = () => {
                                     Net Monthly Income
                                 </label>
                                 <div className='flex'  >
-                                    <span className="block px-2 mt-2 text-2xl text-white bg-blue-900 border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                                    <span className="block px-2 mt-2 text-2xl text-white bg-dblue border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
                                         @
                                     </span>
 
@@ -367,7 +367,7 @@ const Form = () => {
                             <div>
                                 <label className="text-gray-700 text-tiny dark:text-gray-200">Montyly / Rental / Mortgage Payments</label>
                                 <div className='flex'  >
-                                    <span className="block px-2 mt-2 text-2xl text-white bg-blue-900 border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                                    <span className="block px-2 mt-2 text-2xl text-white bg-dblue border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
                                         @
                                     </span>
 
@@ -383,7 +383,7 @@ const Form = () => {
                                     Monthly Loan Paymentts
                                 </label>
                                 <div className='flex'  >
-                                    <span className="block px-2 mt-2 text-2xl text-white bg-blue-900 border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                                    <span className="block px-2 mt-2 text-2xl text-white bg-dblue border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
                                         @
                                     </span>
 
@@ -401,7 +401,7 @@ const Form = () => {
                                     Other Expenses
                                 </label>
                                 <div className='flex'  >
-                                    <span className="block px-2 mt-2 text-2xl text-white bg-blue-900 border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
+                                    <span className="block px-2 mt-2 text-2xl text-white bg-dblue border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring">
                                         @
                                     </span>
 
@@ -527,7 +527,7 @@ const Form = () => {
 
 
                     <div className="flex justify-end mt-16">
-                    <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-900 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+                    <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-dblue rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                         Get Your Reuslts
                     </button>
                 </div>

@@ -24,11 +24,11 @@ module.exports = {
     }
   },
    colors: {
-    'blue-dark': '#00143B',
-    'blue': '#1A498C',
-    'blue-light': '#CEDCFF',
-    'gray-light': '#E9EFF6',
-    'blue-100': '#F2F8FF',
+    'dblue': '#00143B',
+    'blue-7': '#1A498C',
+    'blue-5': '#CEDCFF',
+    'blue-3': '#E9EFF6',
+    'blue-1': '#F2F8FF',
     'white': '#FFFFFF',
   },
   borderRadius: {

@@ -8,40 +8,40 @@ function Compair() {
 
                 <div className='flex flex-1 space-x-5 items-center justify-start'>
 
-                    <p className="text-base leading-tight text-center  bg-indigo-200 w-24 p-4 text-blue-900">Logo</p>
+                    <p className="text-base leading-tight text-center  bg-indigo-200 w-24 p-4 text-dblue">Logo</p>
 
                     <p className="text-base leading-tight text-gray-900">Smart Booster Home Loan Discounted Variable - 2yr</p>
                 </div>
 
                 <div className='flex flex-col items-start justify-start'>
                     <div className="flex space-x-2 items-start justify-start py-2">
-                        <p className="text-xs text-blue-900">Advertised Rate</p>
+                        <p className="text-xs text-dblue">Advertised Rate</p>
 
                         <FaQuestionCircle className="text-gray-500" ></FaQuestionCircle>
 
                     </div>
                     <p className="leading-tight">1.85 % p.a</p>
-                    <p className="text-xs text-blue-900">Intro 24 months</p>
+                    <p className="text-xs text-dblue">Intro 24 months</p>
                 </div>
                 <div className='flex flex-col items-start justify-start'>
                     <div className="flex space-x-2 items-start justify-start py-2">
-                        <p className="text-xs text-blue-900">Advertised Rate</p>
+                        <p className="text-xs text-dblue">Advertised Rate</p>
 
                         <FaQuestionCircle className="text-gray-500" ></FaQuestionCircle>
 
                     </div>
                     <p className="leading-tight">1.85 % p.a</p>
-                    <p className="text-xs text-blue-900">Intro 24 months</p>
+                    <p className="text-xs text-dblue">Intro 24 months</p>
                 </div>
                 <div className='flex flex-col items-start justify-start'>
                     <div className="flex space-x-2 items-start justify-start py-2">
-                        <p className="text-xs text-blue-900">Advertised Rate</p>
+                        <p className="text-xs text-dblue">Advertised Rate</p>
 
                         <FaQuestionCircle className="text-gray-500" ></FaQuestionCircle>
 
                     </div>
                     <p className="leading-tight">1.85 % p.a</p>
-                    <p className="text-xs text-blue-900">Intro 24 months</p>
+                    <p className="text-xs text-dblue">Intro 24 months</p>
                 </div>
 
                 <div>

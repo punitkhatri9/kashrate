@@ -38,13 +38,16 @@ function CarouselImages() {
   return (
 
     <section className="container p-6 mx-auto mb-24 bg-white dark:bg-gray-800">
-      <h2 className="text-3xl font-bold tracking-wide text-center text-gray-800 dark:text-white lg:text-4xl">
+      <h2 className="text-xl font-bold tracking-wide text-center text-dblue lg:text-2xl">
         Top Money Saving Deals
       </h2>
-      <div className='text-center text-gray-800 capitalize font-small dark:text-white md:text-1xl'>
+      <div className='text-center capitalize text-tiny text-dblue dark:text-white md:text-1xl'>
 
         <p className="mt-5">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. su nostrud amet.
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+        </p>
+        <p className="mt-1">
+        Velit officia consequat duis enim velit mollit. su nostrud amet.
         </p>
         <p className="mt-1">
           Minim mollit non deserunt ullamco est sit aliqua dolor do amet

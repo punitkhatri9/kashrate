@@ -35,9 +35,9 @@ function InsuranceFlow() {
 	return (
 		<div>
 			<Layout>
-				{/* <InsuranceFlow2></InsuranceFlow2> */}
-				{/* <InsuranceFlow3></InsuranceFlow3> */}
-				<InsuranceFlow4></InsuranceFlow4>
+				<InsuranceFlow1></InsuranceFlow1>
+				{/* <InsuranceFlow3></InsuranceFlow3>
+				<InsuranceFlow4></InsuranceFlow4> */}
 
 				{heros.map((data) => {
 					return (

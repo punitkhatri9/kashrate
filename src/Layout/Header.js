@@ -15,7 +15,7 @@ const Header = () => {
 		{ name: "Insurance", endpoint: "/insurance" },
 		{ name: "Cards", endpoint: "/cards" },
 		{ name: "Our Services", endpoint: "/contact" },
-		{ name: "About Us", endpoint: "/about" },
+		{ name: "About Us", endpoint: "/aboutus" },
 		{ name: "Contact Us", endpoint: "/contact" },
 
 	];
@@ -24,7 +24,7 @@ const Header = () => {
 		<div>
 			<nav className='container flex flex-wrap items-center justify-between py-4 mx-auto bg-white'>
 				<div className='w-auto pr-10 lg:order-1 lg:w-1/6'>
-					<span className='text-xl font-bold text-gray-900'>
+					<span className='text-xl font-bold dblue'>
 						<Link to='/'> Kashmonk </Link>
 					</span>
 				</div>
@@ -39,7 +39,7 @@ const Header = () => {
 						</svg>
 					</button>
 				</div>
-				<div className='items-center hidden w-auto text-bold lg:w-3/6 navbar-menu lg:order-2 lg:block '>
+				<div className='items-center hidden w-auto text-sm font-bold lg:w-3/6 navbar-menu lg:order-2 lg:block '>
 
 					{topmenu.map(data => {
 						return <TopCenterMenu {...data}></TopCenterMenu>
@@ -50,7 +50,7 @@ const Header = () => {
 				</div>
 				<div className='hidden w-full navbar-menu lg:order-3 lg:block lg:w-2/6 lg:text-right'>
 					<a
-						className='block mt-4 mr-4 text-gray-900 lg:inline-block lg:mt-0 hover:text-blue-800'
+						className='block mt-4 mr-4 text-sm font-bold lg:inline-block lg:mt-0 hover:text-blue-800'
 						href='#'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -62,14 +62,14 @@ const Header = () => {
 								strokeLinecap='round'
 								strokeLinejoin='round'
 								strokeWidth={2}
-								d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
+								d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 b 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'
 							/>
 						</svg>
 						<Link to="/dashboard">	My Account</Link>
 					</a>
 					|
 					<a
-						className='block mt-4 ml-5 mr-4 text-gray-900 lg:inline-block lg:mt-0 hover:text-blue-800'
+						className='block mt-4 ml-3 text-gray-900 lg:inline-block lg:mt-0 hover:text-blue-800'
 						href='#'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
@@ -86,12 +86,12 @@ const Header = () => {
 						</svg>
 						</a>
 						<a
-						className='block mt-4 ml-5 mr-4 text-gray-900 lg:inline-block lg:mt-0 hover:text-blue-800' href="./login">
+						className='block mt-4 ml-2 mr-6 text-sm font-bold lg:inline-block lg:mt-0 hover:text-blue-800' href="./login">
 						0123456789
 					</a>
 				</div>
 			</nav>
-			<nav className='bg-blue-900 '>
+			<nav className='bg-blue-900'>
 				<div className='container flex flex-wrap py-2 mx-auto lg:justify-start'>
 					{submenu.map((row) => {
 						return <SubMenu name={row.name} link={row.endpoint}></SubMenu>;
@@ -105,21 +105,14 @@ export default Header;
 
 function SubMenu(prop) {
 	return (
-		// <span className='mr-8 text-sm leading-7 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0'>
-		// 	<a className='text-white hover:text-blue-200 ' href='#'>
-		// 		{/* {prop.name} */}
-		// 		<Link to={prop.link}>{prop.name}</Link>
-		// 	</a>
-		// </span>
+		<span className='mr-8 text-sm leading-7 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline md:my-0'>
+			<a className='text-white hover:text-blue-200 ' href='#'>
+				{/* {prop.name} */}
+				<Link to={prop.link}>{prop.name}</Link>
+			</a>
+		</span>
 
-<div class="">
-<a
-  class="rounded-t border-b-4 text-white  justify-around hover:border-white pb-2 mt-2 px-4 flex"
-  href="#"
-  >
-	  <Link to={prop.link}>{prop.name}</Link>
-	  </a>
-</div>
+
 	);
 }
 
