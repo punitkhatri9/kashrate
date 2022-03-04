@@ -35,7 +35,7 @@ function InsuranceFlow() {
 	return (
 		<div>
 			<Layout>
-				<InsuranceFlow1></InsuranceFlow1>
+				<InsuranceFlow2></InsuranceFlow2>
 				{/* <InsuranceFlow3></InsuranceFlow3>
 				<InsuranceFlow4></InsuranceFlow4> */}
 

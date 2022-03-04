@@ -26,26 +26,32 @@ function IconHero() {
         { title: 'Pet Insurance', icon: 'FaHome' },
         { title: 'Travel Insurance', icon: 'FaHome' },
         { title: 'Income Protection', icon: 'FaHome' },
+        { title: 'Business Insurance', icon: 'FaHSquare' },
+        { title: 'Hotels', icon: 'FaHotel' },
+        
     ];
 
     return (
 
-        <article className="w-full bg-center bg-cover h-[32rem]" style={mystyle}>
+       
 
-            <section className="container  mx-auto py-24 md:w-9/12 w-11/12 mb-8">
+            <section className="container w-11/12 py-24 mx-auto my-8 md:w-9/12">
+  <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">explore our <br /> awesome <span className="underline decoration-blue-500">Components</span></h1>
+          <p className="m-2 mt-4 text-gray-500 xl:mt-6 dark:text-gray-300">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
+          </p>
 
-
-                <ul ul className='mx-auto bg-blue-50   shadow-lg  grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 grid-cols-2 border-collapse	ring-2 ring-blue-200'>
+                <ul ul className='grid grid-cols-2 mx-auto border-collapse shadow-lg bg-blue-50 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 ring-2 ring-blue-200'>
                     {
                         menuIcon.map(row => {
                             return (
-                                <li className='bg-blue-50 hover:bg-blue-800 hover:text-white max-w-md p-8  flex flex-col  items-center outline  ring-2 ring-blue-200  transition ease-in duration-300' style={{ cursor: 'pointer' }}>
+                                <li className='flex flex-col items-center max-w-md text-center align-middle transition duration-300 ease-in lg:p-6 md:p-4 bg-blue-50 hover:bg-blue-800 hover:text-white outline ring-2 ring-blue-200' style={{ cursor: 'pointer' }}>
                                     <span className='mb-0'>
 
-                                        {React.createElement(FontAwesome[row.icon], { className: "w-8 h-8" })}
+                                        {React.createElement(FontAwesome[row.icon], { className: "w-12 h-10" })}
                                     </span>
 
-                                    <h3 className='text-center'>{row.title}</h3>
+                                    <h3 className='inline text-center'>{row.title}</h3>
 
                                 </li>
                             );
@@ -56,7 +62,7 @@ function IconHero() {
 
                 </ul>
             </section>
-        </article>
+      
 
 
     )

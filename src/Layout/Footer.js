@@ -120,7 +120,7 @@ let Cs= ['+1 526 654 8965', 'example@mail.com']
 
 				</div>
 				<div>
-					<h1 className='text-2xl text-right text-blue-50 '> Kashmonk</h1>
+					<h1 className='text-2xl text-right text-blue-50 '> Kashrate</h1>
 				</div>
 			</div>
 		</footer >

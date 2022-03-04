@@ -82,23 +82,23 @@ function InsuranceFlow2() {
                 <h3 className="text-gray-800 uppercase dark:text-white">
                   Protect youself from corona virus.
                 </h3>
-                <h3 className="mt-1 font-bold text-gray-800 uppercase border-indigo-500 border-b-16 dark:text-white">
+                <h3 className="mt-1 font-bold text-gray-800 uppercase border-gray-700 border-b-16 dark:text-white">
                   All Health plans cover Covid-19 tratment
                 </h3>
                 <div className="mt-1">
-                  <span className="inline-block w-40 h-1 bg-blue-500 rounded-full" />
-                  <span className="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full" />
-                  <span className="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full" />
+                  <span className="inline-block w-40 h-1 bg-blue-900 rounded-full" />
+                  <span className="inline-block w-3 h-1 ml-1 bg-blue-900 rounded-full" />
+                  <span className="inline-block w-1 h-1 ml-1 bg-blue-900 rounded-full" />
                 </div>
 
                 <div className="w-auto mx-auto mt-24">
                   <div className="flex items-center justify-between h-1 bg-gray-200">
-                    <div className="flex items-center w-1/3 h-1 bg-indigo-700">
-                      <div className="flex items-center justify-center w-6 h-6 bg-indigo-700 rounded-full shadow">
+                    <div className="flex items-center w-1/3 h-1 bg-blue-900">
+                      <div className="flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full shadow">
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/thin_with_steps-svg1.svg" alt="check" />
                       </div>
                     </div>
-                    <div className="relative flex items-center justify-between w-1/3 h-1 bg-indigo-700">
+                    <div className="relative flex items-center justify-between w-1/3 h-1 bg-blue-900">
                       <div className="absolute right-0 -mr-2">
                         <div className="relative px-2 py-1 mt-16 -mr-12 bg-white rounded shadow-lg">
                           <svg className="absolute top-0 left-0 right-0 w-full -mt-1" width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -113,11 +113,11 @@ function InsuranceFlow2() {
                           <p tabIndex={0} className="text-xs font-bold text-indigo-700 focus:outline-none">Step 3: Analyzing</p>
                         </div>
                       </div>
-                      <div className="flex items-center justify-center w-6 h-6 -ml-2 bg-indigo-700 rounded-full shadow">
+                      <div className="flex items-center justify-center w-6 h-6 -ml-2 bg-blue-900 rounded-full shadow">
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/thin_with_steps-svg1.svg" alt="check" />
                       </div>
                       <div className="relative flex items-center justify-center w-6 h-6 -mr-3 bg-white rounded-full shadow">
-                        <div className="w-3 h-3 bg-indigo-700 rounded-full" />
+                        <div className="w-3 h-3 bg-blue-900 rounded-full" />
                       </div>
                     </div>
                     <div className="flex justify-end w-1/3">
@@ -134,7 +134,7 @@ function InsuranceFlow2() {
                   <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
                   <div className="h-24 border-2 border-gray-300 border-dashed rounded dark:border-gray-700" />
                 </div>
-                <div className="container justify-center pt-6 mx-auto w-1/2 mt-4" >
+                <div className="container justify-center w-1/2 pt-6 mx-auto mt-4" >
                 <Dropdown
                     options={["Edit", "Duplicate", "Archive", "Move", "Delete"]}
                   onOptionSelect={(option) => {
@@ -144,7 +144,7 @@ function InsuranceFlow2() {
                   />
                 </div>
                 <div className="flex justify-center mt-16">               
-                 <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-dblue rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
+                 <button className="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-900 rounded-md bg-dblue hover:bg-blue-700 focus:outline-none focus:bg-blue-700">
                     Get Your Reuslts
                   </button>
                 </div>
