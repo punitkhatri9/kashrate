@@ -1,36 +1,48 @@
-import React from 'react'
+import React from 'react';
 import * as FontAwesome from 'react-icons/fa';
 
 // import { FaCarAlt } from 'react-icons/fa';
 
-function IconHero() {
-    const mystyle = {
-        backgroundImage: "url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)"
-    };
-    let menuIcon = [
-        { title: "Car Insurance", icon: 'FaCarAlt' },
-        { title: 'Home & Contentes', icon: 'FaHome' },
-        { title: 'Health Insurance', icon: 'FaMedkit' },
-        { title: 'Life Insurance', icon: 'FaHeartbeat' },
-        { title: 'Electricity & Gas', icon: 'FaBolt' },
-        { title: 'Close', icon: 'FaCaretUp' },
-        { title: 'Hotels', icon: 'FaHotel' },
-        { title: 'Landlord Insurance', icon: 'FaHome' },
-        { title: 'Pet Insurance', icon: 'FaHome' },
-        { title: 'Travel Insurance', icon: 'FaHome' },
-        { title: 'Income Protection', icon: 'FaHome' },
-        { title: 'Home Loans', icon: 'FaGlassMartini' },
-        { title: 'Business Insurance', icon: 'FaHSquare' },
-        { title: 'Hotels', icon: 'FaHotel' },
-        { title: 'Landlord Insurance', icon: 'FaHome' },
-        { title: 'Pet Insurance', icon: 'FaHome' },
-        { title: 'Travel Insurance', icon: 'FaHome' },
-        { title: 'Income Protection', icon: 'FaHome' },
-        { title: 'Business Insurance', icon: 'FaHSquare' },
-        { title: 'Hotels', icon: 'FaHotel' },
-        
-    ];
+import axios from 'axios';
 
+export default class IconHero extends React.Component{
+  state = {
+    icons: []
+  }
+    // let menuIcon = [
+    //     { title: "Car Insurance", icon: 'FaCarAlt' },
+    //     { title: 'Home & Contentes', icon: 'FaHome' },
+    //     { title: 'Health Insurance', icon: 'FaMedkit' },
+    //     { title: 'Life Insurance', icon: 'FaHeartbeat' },
+    //     { title: 'Electricity & Gas', icon: 'FaBolt' },
+    //     { title: 'Close', icon: 'FaCaretUp' },
+    //     { title: 'Hotels', icon: 'FaHotel' },
+    //     { title: 'Landlord Insurance', icon: 'FaHome' },
+    //     { title: 'Pet Insurance', icon: 'FaHome' },
+    //     { title: 'Travel Insurance', icon: 'FaHome' },
+    //     { title: 'Income Protection', icon: 'FaHome' },
+    //     { title: 'Home Loans', icon: 'FaGlassMartini' },
+    //     { title: 'Business Insurance', icon: 'FaHSquare' },
+    //     { title: 'Hotels', icon: 'FaHotel' },
+    //     { title: 'Landlord Insurance', icon: 'FaHome' },
+    //     { title: 'Pet Insurance', icon: 'FaHome' },
+    //     { title: 'Travel Insurance', icon: 'FaHome' },
+    //     { title: 'Income Protection', icon: 'FaHome' },
+    //     { title: 'Business Insurance', icon: 'FaHSquare' },
+    //     { title: 'Hotels', icon: 'FaHotel' },
+        
+    // ];
+
+    componentDidMount() {
+      axios.get('http://localhost:3000/menuicon')
+        .then(res => {
+          const icons = res.data;
+          this.setState({ icons });
+          console.log({icons});
+        })
+    }
+render()
+{
     return (
 
        
@@ -43,7 +55,8 @@ function IconHero() {
 
                 <ul ul className='grid grid-cols-2 mx-auto border-collapse shadow-lg bg-blue-50 lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-4 ring-2 ring-blue-200'>
                     {
-                        menuIcon.map(row => {
+                      this.state.icons
+                       .map(row => {
                             return (
                                 <li className='flex flex-col items-center max-w-md text-center align-middle transition duration-300 ease-in lg:p-6 md:p-4 bg-blue-50 hover:bg-blue-800 hover:text-white outline ring-2 ring-blue-200' style={{ cursor: 'pointer' }}>
                                     <span className='mb-0'>
@@ -68,7 +81,6 @@ function IconHero() {
     )
 }
 
-export default IconHero
 
 
 
@@ -77,3 +89,4 @@ export default IconHero
 
 
 
+}

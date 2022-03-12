@@ -7,6 +7,7 @@ import Ourclients from '../../Components/Ourclients';
 import Testimonial from '../../Components/Testimonial';
 import Layout from '../../Layout';
 import IconHero from './IconHero';
+//import {IconHero} from ('./IconHero.js');
 
 function Homepage() {
 	let heros = [
@@ -32,7 +33,7 @@ function Homepage() {
 	return (
 		<div>
 			<Layout>
-				<IconHero></IconHero>
+				<IconHero/>
 
 				
     <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
