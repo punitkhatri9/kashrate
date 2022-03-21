@@ -63,7 +63,19 @@ function Homepage() {
 							reverse={data.reverse}
 							imgsrc={data.src}></HeroWithImgage>
 					);
-				})} */}
+				})}
+					{
+                      this.state.rowdata
+                       .map(row => {
+                            return(
+				<Testimonial
+				name={row.name}
+				imglink={row.imglink}
+				title={row.title}
+				subtitle={row.subtitle}></Testimonial>
+				);
+			})
+		} */}
 				<Homesection></Homesection>
 				<hr className="my-12 border-blue-200 dark:border-gray-700" />
 				<Testimonial></Testimonial>

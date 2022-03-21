@@ -1,6 +1,20 @@
 import React from 'react';
+import axios from 'axios';
 
-function Testimonial() {
+export default class Testimonial extends React.Component  {
+    state = {
+        rawdata: []
+      }
+    
+      componentDidMount() {
+        axios.get(`http://localhost:3000/testimonial`)
+          .then(res => {
+            const rawdata  = res.data;
+            this.setState({ rawdata });
+          })
+      }
+    
+      render() {
     return (
         <section className="bg-white dark:bg-gray-900">
             <div className="container px-6 py-10 mx-auto text-center">
@@ -96,51 +110,29 @@ function Testimonial() {
             </div>
 
             <div className="flex flex-col max-w-2xl mx-auto md:flex-row">
-  <div className="max-w-xs p-5 m-2 mx-auto mr-5 bg-white shadow-2xl rounded-xl">
-    <p> Esther creates truly beautiful components, 
-      you should definitely work with her. The end
-      results are always worth it. A great find!
-    </p>
-    <div className="flex items-center mt-5">
-      <img src="https://picsum.photos/60/60" className="rounded-full" />
-      <div className="ml-3">
-        <h3 className="font-semibold"> Lana Del Rey </h3>
-        <p className="text-gray-500"> Singer </p>
-      </div>
-    </div>
-  </div>
-  <div className="max-w-xs p-5 m-2 mx-auto mr-5 bg-white shadow-2xl rounded-xl">
-    <p> Esther creates truly beautiful components, 
-      you should definitely work with her. The end
-      results are always worth it. A great find!
-    </p>
-    <div className="flex items-center mt-5">
-      <img src="https://picsum.photos/60/60" className="rounded-full" />
-      <div className="ml-3">
-        <h3 className="font-semibold"> Ariel</h3>
-        <p className="text-gray-500"> Mermaid @ Disney </p>
-      </div>
-    </div>
-  </div>
-  <div className="max-w-xs p-5 m-2 mx-auto bg-white shadow-2xl rounded-xl">
-    <p> Esther creates truly beautiful components, 
-      you should definitely work with her. The end
-      results are always worth it. A great find!
-    </p>
-    <div className="flex items-center mt-5">
-      <img src="https://picsum.photos/60/60" className="rounded-full" />
-      <div className="ml-3">
-        <h3 className="font-semibold"> Lana Del Rey </h3>
-        <p className="text-gray-500"> Singer </p>
-      </div>
-    </div>
-  </div>
+            {
+          this.state.rawdata
+            .map(rawdata =>     
+        <div className="max-w-xs p-5 m-2 mx-auto mr-5 bg-white shadow-2xl rounded-xl">
+          <p>{rawdata.name} </p>
+        <div className="flex items-center mt-5">
+          <img src="https://picsum.photos/60/60" className="rounded-full" />
+        <div className="ml-3">
+          <h3 className="font-semibold">{rawdata.title} </h3>
+          <p className="text-gray-500"> {rawdata.subtitle} </p>
+        </div>
+        </div>
+        </div>
+            )
+      }
+  
 </div>
 
         </section>
-
+      
 
     );
 }
+}
 
-export default Testimonial;
+
